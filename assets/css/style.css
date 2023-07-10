@@ -20,9 +20,16 @@ h1,h2,h3,h4,h5,h6 {
     --secondary-color:#FFF8F3;
 }
 
+.section-title {
+    margin: 20px 0px;
+}
 /* Header CSS */
 header {
     background-color: var(--secondary-color);
+    background-image: url("/assets/images/header_bg.png");
+    background-repeat: no-repeat;
+    
+    background-position: bottom right;
    
 }
 
@@ -55,6 +62,9 @@ nav {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
+.btn-download {
+    margin-left: 0px;
+}
 .banner {
     display: flex;
     justify-content: space-between;
@@ -62,26 +72,29 @@ nav {
     align-items: center;
     
 }
-.banner-img {
-    background-image: url("/assets/images/header_bg.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center bottom;
-}
+
 .banner-img img {
     width: 80%;
 
 }
 .banner-content {
     align-items: center;
+    max-width: 500px;
 }
 .short-bio {
     padding: 15px 50px 15px 0px;
 }
 
+/*  CSS for main section */
+
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 /* About Me Section CSS */
 .about-me .container {
-    margin: 50px 200px;
+    margin: 50px 0px;
     background-color: var(--secondary-color);
     text-align: center;
     padding:50px ;
@@ -107,10 +120,12 @@ nav {
     font-weight: bold;
     
 }
+
+
 /* CSS for What I do Section */
 .what-i-do {
     text-align: center;
-    padding: 100px 150px;
+    /* padding: 100px 150px; */
 }
 .skill-container {
     display: flex;
@@ -131,13 +146,13 @@ nav {
 .summery {
     justify-content: center;
     text-align: center;
-    margin: 25px 0px;
+    margin: 50px 0px;
 }
 
 .summery-container {
     display: flex;
    justify-content: space-around;
-    margin: 30px 150px;
+    margin: 30px 0px;
 }
 
 .education, .experience {
@@ -147,9 +162,33 @@ nav {
 }
 
 .edu-info, .work-info {
-    margin: 25px 0px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+.edu-info p {
+    font-size: medium;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 }
 
+.work-info p {
+    font-size: medium;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+.edu-info h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.work-info h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.summary-sub-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 
 
 
